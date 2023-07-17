@@ -65,3 +65,12 @@ sliderPoint.forEach((point, index) => {
 		thisSlide(sliderCount);
 	})
 })
+
+/*вешает на ссылку сверху клик */
+headerItem.forEach((point, index) => {
+	point.addEventListener('click', ()  => {
+		sliderCount = index;
+		scrollSlider();
+		thisSlide(sliderCount);
+	})
+})
